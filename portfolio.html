@@ -1,74 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <style>
-    body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
-}
-
-header {
-    background: #333;
-    color: white;
-    padding: 1em 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-header p {
-    margin: 0.5em 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 1em;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-section {
-    padding: 2em 1em;
-    margin: 1em 0;
-    background: white;
-}
-
-section h2 {
-    margin-top: 0;
-}
-
-.project, .job, .education-item {
-    margin-bottom: 1.5em;
-}
-
-footer {
-    text-align: center;
-    padding: 1em 0;
-    background: #333;
-    color: white;
-}
-  </style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bramwel Vasaka's portfolio showcasing skills and experience as a junior software engineer specializing in JavaScript, HTML, and CSS.">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            margin: 0.5em 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0.5em;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 2em 1em;
+            margin: 1em 0;
+            background: white;
+        }
+
+        section h2 {
+            margin-top: 0;
+        }
+
+        .project, .job, .education-item {
+            margin-bottom: 1.5em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background: #333;
+            color: white;
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 0.5em 1em;
+            color: white;
+            background-color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        a.button:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>BRAMWEL VASAKA</h1>
-        <p>I am a junior software engineer with expertise in HTML,Javascript and CSS.</p>
+        <p>I am a junior software engineer with expertise in HTML, JavaScript, and CSS.</p>
         <nav>
             <ul>
                 <li><a href="#portfolio">Portfolio</a></li>
@@ -82,19 +102,18 @@ footer {
 
     <section id="portfolio">
         <h2>Portfolio</h2>
-        <div class="My Portfolio">
-            <h3>A Sample Login Webpage</h3>
-            <img src="Screenshot (4)(1)(1).png" alt="Farooq Investors Image">
-            <a href="https://github.com/bram-me/Login-Template">Repository</a>
+        <div class="project">
+            <h3>Expense Trackers</h3>
+            <img src="Screenshot (4)(1)(1).png" alt="Screenshot of Expense Trackers Project">
+            <br>
+            <a href="https://github.com/bram-me/Login-Template" class="button">Repository</a>
         </div>
-
     </section>
 
     <section id="skills">
         <h2>Skills</h2>
         <ul>
-            <li>Coding in Javascript, HTML,CSS</li>
-
+            <li>Coding in JavaScript, HTML, and CSS</li>
         </ul>
     </section>
 
@@ -102,9 +121,8 @@ footer {
         <h2>Experience</h2>
         <div class="job">
             <h3>Student at PLP</h3>
-            <p>I am enrolled as a junior Software Engineering .</p>
+            <p>I am enrolled as a junior Software Engineering student.</p>
         </div>
-   
     </section>
 
     <section id="education">
@@ -117,7 +135,7 @@ footer {
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="bramwelvasaka@gmail.com">bramwelvasaka@gmail.com</a></p>
+        <p>Email: <a href="mailto:bramwelvasaka@gmail.com">bramwelvasaka@gmail.com</a></p>
         <p>LinkedIn: <a href="https://ke.linkedin.com/in/bramwel-vasaka-960163280">LinkedIn Profile</a></p>
         <p>GitHub: <a href="https://github.com/bram-me">GitHub Profile</a></p>
     </section>
